@@ -1,0 +1,83 @@
+services:
+ 
+  mongodb_history:
+    command: >
+      mongod  --logpath=/dev/null
+    image: mongo:latest
+    container_name: mongodb_history
+    ports:
+      - "27018:27017"
+    networks:
+      - brewery_network
+    volumes:
+      - mongo_history_data:/data/db
+
+  mongodb_batch:
+    command: >
+      mongod  --logpath=/dev/null
+    image: mongo:latest
+    container_name: mongodb_batch
+    ports:
+      - "27019:27017"
+    networks:
+      - brewery_network
+    volumes:
+      - mongo_batch_data:/data/db
+
+  data-gather:
+    build:
+      context: ./data-gather/high
+    container_name: data-gather
+    ports:
+      - "5001:5001"
+    depends_on:
+      - mongodb_batch
+    networks:
+      - brewery_network
+    restart: always
+
+  aggregator:
+    build:
+      context: ./aggregator/high
+    container_name: aggregator
+    command: python aggregator.py
+    depends_on:
+      - mongodb_history
+      - data-gather
+    ports:
+      - "5002:5002"
+    networks:
+      - brewery_network
+
+  analyzer:
+    build:
+      context: ./analyzer/high
+    container_name: analyzer
+    command: python analyzer.py
+    depends_on:
+      - mongodb_history
+    networks:
+      - brewery_network
+    ports:
+      - "5003:5003"
+
+  gateway:
+    build:
+      context: ./gateway/high
+    container_name: api-gateway
+    command: python gateway.py
+    depends_on:
+      - analyzer
+      - aggregator
+    networks:
+      - brewery_network
+    ports:
+      - "5000:5000"
+
+networks:
+  brewery_network:
+    driver: bridge
+
+volumes:
+  mongo_history_data:
+  mongo_batch_data:
