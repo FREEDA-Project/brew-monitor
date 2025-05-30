@@ -26,7 +26,7 @@ Each service in the application has two versions:
 
 ### Project Structure
 The project is organized as follows (assuming the root is `src-prova/`):
-
+```
 .
 ├── buildall.sh              # Master script to automate cluster setup, image building, and deployment
 │
@@ -49,7 +49,7 @@ The project is organized as follows (assuming the root is `src-prova/`):
 ├── analyzer/            # Analyzer service (high flavour)
 ├── data-gather/         # Data collection service (high/low flavour)
 └── gateway/             # Gateway service (high/low flavour)
-
+```
 
 ### Prerequisites
 - Docker
