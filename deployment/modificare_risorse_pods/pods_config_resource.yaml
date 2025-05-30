@@ -1,0 +1,28 @@
+cluster: master
+driver: docker
+namespace: brewery
+containers:
+    gateway:
+      cpu: "1"
+      memory: "512Mi"
+    aggregator:
+      cpu: "2"
+      memory: "7Gi"
+    analyzer:
+      cpu: "1"
+      memory: "512Mi"
+    data-gather-pluto:
+      cpu: "1"
+      memory: "512Mi"
+    data-gather-pino:
+      cpu: "1"
+      memory: "512Mi"
+    mongodb-batch-pluto:
+      cpu: "1"
+      memory: "1Gi"
+    mongodb-batch-pino:
+      cpu: "1"
+      memory: "1Gi"
+    mongodb-history:
+        cpu: "1"
+        memory: "1Gi"

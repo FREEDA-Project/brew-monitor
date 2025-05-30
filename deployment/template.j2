@@ -1,0 +1,115 @@
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ namespace_name }}
+---
+{% for service in services -%}
+# Deployment per {{ service.name }} (flavour: {{ service.flavour }})
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ service.name }}
+  namespace: {{ namespace_name }} 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ service.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ service.name }}
+    spec:
+      {% if service.node %}
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "{{ service.node }}"
+      {% endif %}
+      containers:
+      - name: {{ service.name -}}
+        {% if service.name in ['mongodb-history'] or service.name.startswith('mongodb-batch-') %}
+        image: docker.io/library/mongo:latest
+        {% else %}
+        image: docker.io/library/brewery-{% if service.name.startswith('data-gather-') %}data-gather{% else %}{{ service.name }}{% endif %}:{{ service.flavour }}
+        {% endif -%}
+        imagePullPolicy: IfNotPresent
+        {% if 'data-gather-' in service.name -%}
+        env:
+        - name: INSTANCE_NAME
+          value: {{ service.name.split('-')[2] -}}
+        {% endif %}
+        {%- if service.name in ['aggregator', 'analyzer'] -%}
+        env:
+        - name: DATA_GATHER_INSTANCES
+          value: {% set dg_list = [] -%}
+                  {%- for s_inner in services -%} 
+                    {%- if 'data-gather-' in s_inner.name -%}
+                      {%- if dg_list.append(s_inner.name) -%}{%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {{- dg_list|join(',') -}}
+        {% endif %}
+        ports:
+        - containerPort: {{ service.port }}
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      {% if service.name in ['mongodb-history', 'mongodb-batch'] %}
+        volumeMounts:
+        - name: {{ service.name }}-data
+          mountPath: /data/db
+      volumes:
+      - name: {{ service.name }}-data
+        persistentVolumeClaim:
+          claimName: {{ service.name }}-pvc
+      {%- endif %}
+---
+# Service per {{ service.name }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ service.name }}
+  namespace: {{ namespace_name }} 
+spec:
+  type: {{ service.type -}}
+  {% if service.type == 'NodePort' %}
+  ports:
+  - port: {{ service.port }}
+    targetPort: {{ service.port }}
+    nodePort: {{ service.nodePort }}
+  {% else %}
+  ports:
+  - port: {{ service.port }}
+    targetPort: {{ service.port }}
+  {% endif -%}
+  selector:
+    app: {{ service.name }}
+---
+{%- if service.name in ['mongodb-history', 'mongodb-batch'] or service.name.startswith('mongodb-batch-') %}
+# PVC per {{ service.name }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ service.name }}-pvc
+  namespace: {{ namespace_name }} 
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: {% if service.name == 'mongodb-history' %}100Mi{% else %}50Mi{% endif %} 
+---
+{% endif %}
+{% endfor -%}

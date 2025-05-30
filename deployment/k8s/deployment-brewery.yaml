@@ -1,0 +1,528 @@
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: brewery
+---
+# Deployment per gateway (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gateway
+  template:
+    metadata:
+      labels:
+        app: gateway
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master-m02"
+      
+      containers:
+      - name: gateway
+        image: docker.io/library/brewery-gateway:high
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - containerPort: 5000
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per gateway
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway
+  namespace: brewery 
+spec:
+  type: NodePort
+  ports:
+  - port: 5000
+    targetPort: 5000
+    nodePort: 30000
+  selector:
+    app: gateway
+---
+# Deployment per data-gather-pluto (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-gather-pluto
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-gather-pluto
+  template:
+    metadata:
+      labels:
+        app: data-gather-pluto
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master-m02"
+      
+      containers:
+      - name: data-gather-pluto
+        image: docker.io/library/brewery-data-gather:high
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: INSTANCE_NAME
+          value: pluto
+        ports:
+        - containerPort: 5001
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per data-gather-pluto
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-gather-pluto
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5001
+    targetPort: 5001
+  selector:
+    app: data-gather-pluto
+---
+# Deployment per data-gather-pino (flavour: low)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-gather-pino
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: data-gather-pino
+  template:
+    metadata:
+      labels:
+        app: data-gather-pino
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master-m02"
+      
+      containers:
+      - name: data-gather-pino
+        image: docker.io/library/brewery-data-gather:low
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: INSTANCE_NAME
+          value: pino
+        ports:
+        - containerPort: 5001
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per data-gather-pino
+apiVersion: v1
+kind: Service
+metadata:
+  name: data-gather-pino
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5001
+    targetPort: 5001
+  selector:
+    app: data-gather-pino
+---
+# Deployment per aggregator (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aggregator
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aggregator
+  template:
+    metadata:
+      labels:
+        app: aggregator
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master-m02"
+      
+      containers:
+      - name: aggregator
+        image: docker.io/library/brewery-aggregator:high
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DATA_GATHER_INSTANCES
+          value: data-gather-pluto,data-gather-pino
+        ports:
+        - containerPort: 5002
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per aggregator
+apiVersion: v1
+kind: Service
+metadata:
+  name: aggregator
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5002
+    targetPort: 5002
+  selector:
+    app: aggregator
+---
+# Deployment per analyzer (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: analyzer
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: analyzer
+  template:
+    metadata:
+      labels:
+        app: analyzer
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master-m02"
+      
+      containers:
+      - name: analyzer
+        image: docker.io/library/brewery-analyzer:high
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: DATA_GATHER_INSTANCES
+          value: data-gather-pluto,data-gather-pino
+        ports:
+        - containerPort: 5003
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per analyzer
+apiVersion: v1
+kind: Service
+metadata:
+  name: analyzer
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5003
+    targetPort: 5003
+  selector:
+    app: analyzer
+---
+# Deployment per mongodb-batch-pino (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-batch-pino
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-batch-pino
+  template:
+    metadata:
+      labels:
+        app: mongodb-batch-pino
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master"
+      
+      containers:
+      - name: mongodb-batch-pino
+        image: docker.io/library/mongo:latest
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - containerPort: 27017
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per mongodb-batch-pino
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-batch-pino
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 27017
+    targetPort: 27017
+  selector:
+    app: mongodb-batch-pino
+---
+# PVC per mongodb-batch-pino
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-batch-pino-pvc
+  namespace: brewery 
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Mi 
+---
+
+# Deployment per mongodb-batch-pluto (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-batch-pluto
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-batch-pluto
+  template:
+    metadata:
+      labels:
+        app: mongodb-batch-pluto
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master"
+      
+      containers:
+      - name: mongodb-batch-pluto
+        image: docker.io/library/mongo:latest
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - containerPort: 27017
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+---
+# Service per mongodb-batch-pluto
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-batch-pluto
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 27017
+    targetPort: 27017
+  selector:
+    app: mongodb-batch-pluto
+---
+# PVC per mongodb-batch-pluto
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-batch-pluto-pvc
+  namespace: brewery 
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Mi 
+---
+
+# Deployment per mongodb-history (flavour: high)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-history
+  namespace: brewery 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb-history
+  template:
+    metadata:
+      labels:
+        app: mongodb-history
+    spec:
+      
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100 
+            preference:
+              matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - "master"
+      
+      containers:
+      - name: mongodb-history
+        image: docker.io/library/mongo:latest
+        imagePullPolicy: IfNotPresent
+        
+        ports:
+        - containerPort: 27017
+        resources: 
+          requests:
+            cpu: "1" 
+            memory: "512Mi"
+          limits:
+            cpu: "1" 
+            memory: "512Mi" 
+      
+        volumeMounts:
+        - name: mongodb-history-data
+          mountPath: /data/db
+      volumes:
+      - name: mongodb-history-data
+        persistentVolumeClaim:
+          claimName: mongodb-history-pvc
+---
+# Service per mongodb-history
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-history
+  namespace: brewery 
+spec:
+  type: ClusterIP
+  ports:
+  - port: 27017
+    targetPort: 27017
+  selector:
+    app: mongodb-history
+---
+# PVC per mongodb-history
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-history-pvc
+  namespace: brewery 
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi 
+---
+

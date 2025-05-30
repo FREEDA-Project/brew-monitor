@@ -1,0 +1,10 @@
+service,flavour,node
+
+gateway,high,master-m02
+data-gather-pluto,high,master-m02
+data-gather-pino,low,master-m02
+aggregator,high,master-m02
+analyzer,high,master-m02
+mongodb-batch-pino,high,master
+mongodb-batch-pluto,high,master
+mongodb-history,high,master
