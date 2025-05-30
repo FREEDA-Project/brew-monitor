@@ -1,0 +1,12 @@
+minikube image ls list -p brewery-cluster
+
+kubectl apply -f  deployment/k8s/deployment.yaml -n brewery
+
+kubectl get pods -o wide -n brewery
+
+minikube service gateway -p master -n brewery --url
+
+
+kubectl cordon master-m02
+kubectl drain master-m02 --ignore-daemonsets --delete-emptydir-data
+kubectl uncordon master-m02

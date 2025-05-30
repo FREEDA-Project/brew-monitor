@@ -1,0 +1,30 @@
+name: master #name of the cluster
+nodes:
+  main_node:
+    capabilities:
+      cpu: 2
+      ram: 4
+      storage: 1024
+      availability: 99.9 
+    profile: 
+      cost: 5       
+      carbon: 150   
+  worker1:
+    capabilities:
+      cpu: 2
+      ram: 4
+      storage: 1024
+      availability: 99.9 
+    profile: 
+      cost: 5       
+      carbon: 150
+  worker2:
+    capabilities:
+      cpu: 2
+      ram: 4
+      storage: 1024
+      availability: 99.9 
+    profile: 
+      cost: 5       
+      carbon: 150  
+    
