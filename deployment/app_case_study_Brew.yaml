@@ -1,0 +1,177 @@
+name: case_study_1
+components:
+  gateway:
+    must: true
+    flavours:
+      large:
+        uses:
+          - { component: aggregator, min_flavour: large }
+          - { component: analyzer, min_flavour: large }
+        energy: 598
+      tiny:
+        uses:
+          - { component: aggregator, min_flavour: tiny }
+        energy: 598
+    importance_order: [tiny, large]
+  aggregator:
+    flavours:
+      large:
+        uses:
+          - { component: mongodb_history, min_flavour: medium }
+          - { component: data_gather_torino, min_flavour: tiny }
+          - { component: data_gather_olbia, min_flavour: tiny }
+        energy: 598
+      tiny:
+        uses:
+          - { component: data_gather_torino, min_flavour: tiny }
+          - { component: data_gather_olbia, min_flavour: tiny }
+        energy: 598
+    importance_order: [tiny, large]
+  analyzer:
+    flavours:
+      large:
+        uses:
+          - { component: mongodb_history, min_flavour: medium }
+        energy: 598
+    importance_order: [large]
+  data_gather_torino:
+    flavours:
+      large:
+        uses:
+          - { component: mongodb_batch_torino, min_flavour: medium }
+        energy: 598
+      tiny:
+        uses: []
+        energy: 598
+    importance_order: [tiny, large]
+  data_gather_olbia:
+    flavours:
+      large:
+        uses:
+          - { component: mongodb_batch_olbia, min_flavour: medium }
+        energy: 598
+      tiny:
+        uses: []
+        energy: 598
+    importance_order: [tiny, large]
+  mongodb_history:
+    flavours:
+      medium:
+        uses: []
+        energy: 598
+    importance_order: [medium]
+  mongodb_batch_torino:
+    flavours:
+      medium:
+        uses: []
+        energy: 598
+    importance_order: [medium]
+  mongodb_batch_olbia:
+    flavours:
+      medium:
+        uses: []
+        energy: 598
+    importance_order: [medium]
+requirements:
+  components:
+    gateway:
+      common:
+        subnet: [public]
+        security: [firewall, ssl]
+      flavour-specific:
+        large: { cpu: 2, ram: 4, availability: 99 }
+        tiny: { cpu: 1, ram: 2, availability: 98 }
+    aggregator:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        large: { cpu: 2, ram: 4, availability: 99 }
+        tiny: { cpu: 1, ram: 2, availability: 99 }
+    analyzer:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        large: { cpu: 2, ram: 2, availability: 99 }
+    data_gather_torino:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        large: { cpu: 1, ram: 2, availability: 99 }
+        tiny: { cpu: 1, ram: 1, availability: 97 }
+    data_gather_olbia:
+      common:
+        subnet: [private]
+        security: [ssl]
+      flavour-specific:
+        large: { cpu: 1, ram: 2, availability: 99 }
+        tiny: { cpu: 1, ram: 1, availability: 97 }
+    mongodb_history:
+      common:
+        subnet: [private]
+        security: [encrypted_storage]
+      flavour-specific:
+        medium: { cpu: 2, ram: 4, availability: 99, storage: 100 }
+    mongodb_batch_torino:
+      common:
+        subnet: [private]
+        security: [encrypted_storage]
+      flavour-specific:
+        medium: { cpu: 1, ram: 2, availability: 99, storage: 50 }
+    mongodb_batch_olbia:
+      common:
+        subnet: [private]
+        security: [encrypted_storage]
+      flavour-specific:
+        medium: { cpu: 1, ram: 2, availability: 99, storage: 50 }
+  dependencies:
+    gateway:
+      large:
+        aggregator:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+        analyzer:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+      tiny:
+        aggregator:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+    aggregator:
+      large:
+        mongodb_history: 
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+        data_gather_torino:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+        data_gather_olbia:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+      tiny:
+        data_gather_torino:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+        data_gather_olbia:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+    analyzer:
+      large:
+        mongodb_history:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+    data_gather_torino:
+      large:
+        mongodb_batch_torino:
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+    data_gather_olbia:
+      large:
+        mongodb_batch_olbia:   
+          requirements: { latency: 25, availability: 97 }
+          energy: 5
+  budget:
+    cost: 2000000
+    carbon: 2000000
