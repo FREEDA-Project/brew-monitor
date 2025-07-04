@@ -1,0 +1,40 @@
+requirements:
+  components:
+    api:
+      medium:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private3
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: true
+          soft: true
+          value: private1
+      - anti-affinity:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value:
+          - etcd
+          - large
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private5
+    database:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private1
+    etcd:
+      large:
+      - avoid:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value: private1

@@ -1,0 +1,16 @@
+2025-04-16 17:16:27,850 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large). due to priority: None
+2025-04-16 17:16:27,850 -- Dropping constraint: affinity(identity_provider,large,redis,large,0.006). due to priority: None
+2025-04-16 17:17:28,005 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large). due to priority: None
+2025-04-16 17:17:28,005 -- Dropping constraint: affinity(identity_provider,large,redis,large,0.006). due to priority: None
+2025-04-16 17:17:31,635 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large). due to priority: energy
+2025-04-16 17:17:35,869 -- Dropping constraint: affinity(identity_provider,large,redis,large,0.006). due to priority: failure
+2025-04-16 17:36:40,151 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large,0.006). due to priority: failure
+2025-04-16 17:37:45,063 -- Dropping constraint: affinity(identity_provider,large,redis,large). due to priority: energy
+2025-04-16 17:38:48,432 -- Dropping constraint: affinity(identity_provider,large,redis,large). due to priority: energy
+2025-04-16 17:39:08,559 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large,0.006). due to priority: failure
+2025-04-16 17:39:19,353 -- Dropping constraint: affinity(identity_provider,large,redis,large). due to priority: None
+2025-04-16 17:39:19,353 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large,0.006). due to priority: None
+2025-04-16 17:40:08,313 -- Dropping constraint: affinity(identity_provider,large,redis,large). due to priority: None
+2025-04-16 17:40:08,313 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large,0.006). due to priority: None
+2025-04-16 17:40:38,474 -- Dropping constraint: affinity(identity_provider,large,redis,large). due to priority: energy
+2025-04-16 17:40:42,807 -- Dropping constraint: anti-affinity(identity_provider,large,redis,large,0.006). due to priority: failure

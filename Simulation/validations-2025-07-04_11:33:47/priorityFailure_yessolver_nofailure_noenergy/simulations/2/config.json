@@ -1,0 +1,51 @@
+{
+    "tick_every_ms": 10,
+    "timeout": null,
+    "max_ticks": 144,
+    "incremental_mapping_phase": true,
+    "events": [
+        "start",
+        "stop",
+        "tick",
+        "enact",
+        "tick"
+    ],
+    "callbacks": [
+        "service_energy",
+        "service_emissions",
+        "interaction_energy",
+        "interaction_emissions",
+        "featured_carbon",
+        "required_cpu",
+        "required_ram",
+        "required_storage",
+        "required_gpu",
+        "required_latency",
+        "required_bandwidth",
+        "featured_cpu",
+        "featured_ram",
+        "featured_storage",
+        "featured_gpu",
+        "featured_latency",
+        "featured_bandwidth",
+        "placement",
+        "response_time",
+        "alive_nodes",
+        "seed",
+        "ticks",
+        "simulation_time",
+        "gml_app",
+        "gml_infr"
+    ],
+    "reporters": [
+        "csv",
+        "gml",
+        "tensorboard"
+    ],
+    "feeds": [],
+    "seed": 42,
+    "path": "/Users/franciscoponce/Documents/GitHub/case_study/Simulation/validations-2025-07-04_11:33:47/priorityFailure_yessolver_nofailure_noenergy/simulations/2",
+    "log_to_file": true,
+    "log_level": "ECLYPSE",
+    "remote": false
+}

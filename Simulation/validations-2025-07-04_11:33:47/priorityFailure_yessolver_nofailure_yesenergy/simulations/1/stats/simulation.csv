@@ -1,0 +1,4 @@
+timestamp,event_id,n_event,callback_id,value
+2025-07-04 11:34:14.541985,stop,1,seed,42
+2025-07-04 11:34:14.542065,stop,1,ticks,144
+2025-07-04 11:34:14.542164,stop,1,simulation_time,2.1624221801757812

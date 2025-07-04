@@ -1,0 +1,32 @@
+requirements:
+  components:
+    api:
+      large:
+      - affinity:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value:
+          - database
+          - large
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private3
+    database:
+      large:
+      - avoid:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: private3
+    identity_provider:
+      large:
+      - affinity:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value:
+          - redis
+          - large

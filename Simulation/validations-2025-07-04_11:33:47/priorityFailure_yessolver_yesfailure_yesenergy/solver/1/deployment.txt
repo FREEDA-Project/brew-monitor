@@ -1,0 +1,12 @@
+Component gateway deployed in flavour tiny on node m2.
+Component data_gather_olbia deployed in flavour large on node worker1.
+Component data_gather_torino deployed in flavour large on node worker1.
+Component aggregator deployed in flavour large on node worker1.
+Component mongodb_batch_olbia deployed in flavour medium on node worker2.
+Component mongodb_batch_torino deployed in flavour medium on node worker2.
+Component analyzer not deployed.
+Component mongodb_history deployed in flavour medium on node worker2.
+Objective value: 6
+	App quality: 10
+	Total cost: 60
+	Total carb: 1385400

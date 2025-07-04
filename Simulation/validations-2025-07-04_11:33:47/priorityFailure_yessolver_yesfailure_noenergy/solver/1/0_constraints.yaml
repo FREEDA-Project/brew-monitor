@@ -1,0 +1,9 @@
+requirements:
+  components:
+    gateway:
+      large:
+      - avoid:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value: main

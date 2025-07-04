@@ -1,0 +1,596 @@
+12:16:28 | ECLYPSE | Simulation - Event Start-0 fired.
+12:16:28 | ECLYPSE | Simulation - Event Tick-0 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-0 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-1 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-1 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-2 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-2 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-3 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-3 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-4 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-4 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-5 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-5 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-6 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-6 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-7 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-7 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-8 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-8 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-9 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-9 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-10 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-10 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-11 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-11 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-12 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-12 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-13 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-13 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:28 | ECLYPSE | Simulation - Event Tick-14 fired.
+12:16:28 | ECLYPSE | Simulation - Event Enact-14 fired.
+12:16:28 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:28 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-15 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-15 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-16 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-16 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-17 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-17 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-18 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-18 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-19 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-19 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-20 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-20 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-21 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-21 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-22 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-22 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-23 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-23 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-24 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-24 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-25 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-25 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-26 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-26 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-27 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-27 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-28 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-28 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-29 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-29 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-30 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-30 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-31 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-31 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-32 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-32 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-33 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-33 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-34 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-34 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-35 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-35 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-36 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-36 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-37 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-37 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-38 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-38 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-39 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-39 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-40 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-40 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-41 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-41 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-42 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-42 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-43 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-43 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-44 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-44 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-45 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-45 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-46 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-46 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-47 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-47 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-48 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-48 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-49 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-49 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-50 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-50 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-51 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-51 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-52 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-52 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-53 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-53 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-54 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-54 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-55 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-55 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-56 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-56 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-57 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-57 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-58 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-58 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-59 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-59 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-60 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-60 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-61 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-61 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-62 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-62 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-63 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-63 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-64 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-64 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-65 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-65 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-66 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-66 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-67 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-67 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-68 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-68 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-69 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-69 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-70 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-70 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-71 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-71 fired.
+12:16:29 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:29 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:29 | ECLYPSE | Simulation - Event Tick-72 fired.
+12:16:29 | ECLYPSE | Simulation - Event Enact-72 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-73 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-73 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-74 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-74 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-75 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-75 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-76 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-76 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-77 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-77 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-78 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-78 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-79 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-79 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-80 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-80 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-81 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-81 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-82 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-82 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-83 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-83 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-84 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-84 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-85 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-85 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-86 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-86 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-87 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-87 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-88 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-88 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-89 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-89 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-90 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-90 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-91 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-91 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-92 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-92 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-93 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-93 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-94 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-94 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-95 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-95 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-96 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-96 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-97 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-97 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-98 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-98 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-99 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-99 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-100 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-100 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-101 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-101 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-102 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-102 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-103 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-103 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-104 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-104 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-105 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-105 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-106 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-106 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-107 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-107 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-108 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-108 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-109 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-109 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-110 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-110 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-111 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-111 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-112 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-112 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-113 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-113 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-114 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-114 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-115 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-115 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-116 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-116 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-117 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-117 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:30 | ECLYPSE | Simulation - Event Tick-118 fired.
+12:16:30 | ECLYPSE | Simulation - Event Enact-118 fired.
+12:16:30 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:30 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-119 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-119 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-120 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-120 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-121 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-121 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-122 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-122 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-123 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-123 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-124 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-124 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-125 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-125 fired.
+12:16:31 | ECLYPSE | PlacementManager - Placement of case_study on case_study
+12:16:31 | ECLYPSE | PlacementManager - {load_balancer_large -> public1 | api_large -> private1 | frontend_large -> public1 | identity_provider_large -> private3 | redis_large -> private3 | database_large -> private5 | etcd_large -> private1}
+12:16:31 | ECLYPSE | Simulation - Event Tick-126 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-126 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.988057233653375, 'ram': 7.97611446730675, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-127 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-127 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.9521647185504944, 'ram': 7.904329437100989, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-128 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-128 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.91659523608354, 'ram': 7.83319047216708, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-129 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-129 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.881345878958788, 'ram': 7.762691757917576, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-130 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-130 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.8464137660481588, 'ram': 7.6928275320963175, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-131 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-131 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.811796042153725, 'ram': 7.62359208430745, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-132 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-132 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.7774898777743418, 'ram': 7.5549797555486835, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-133 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-133 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.7434924688743725, 'ram': 7.486984937748745, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-134 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-134 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.709801036654503, 'ram': 7.419602073309006, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-135 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-135 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.6764128273246124, 'ram': 7.352825654649225, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-136 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-136 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.6433251118786907, 'ram': 7.286650223757381, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-137 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-137 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.6105351858717825, 'ram': 7.221070371743565, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-138 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-138 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.5780403691989364, 'ram': 7.156080738397873, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-139 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-139 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.545838005876146, 'ram': 7.091676011752292, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-140 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-140 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.5139254638232607, 'ram': 7.027850927646521, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-141 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-141 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.482300134648851, 'ram': 6.964600269297702, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-142 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-142 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.4509594334370113, 'ram': 6.901918866874023, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Tick-143 fired.
+12:16:31 | ECLYPSE | Simulation - Event Enact-143 fired.
+12:16:31 | ECLYPSE | case_study - Node public1 not respected
+12:16:31 | ECLYPSE | case_study - Required: {'cpu': 4.0, 'ram': 8.0, 'storage': 0.0, 'availability': 99, 'subnet': ['public'], 'security': ['firewall', 'ssl'], 'energy': 1341.0, 'group': CLOUD}
+12:16:31 | ECLYPSE | case_study - Available: {'cpu': 3.4199007985360783, 'ram': 6.839801597072157, 'storage': 1024, 'availability': 99, 'subnet': ['public'], 'security': ['ssl', 'firewall'], 'energy': 0.0, 'group': CLOUD, 'processing_time': 0, 'cost': 9, 'carbon': 402}
+12:16:31 | ECLYPSE | Simulation - Event Stop-0 fired.

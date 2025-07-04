@@ -1,0 +1,403 @@
+{
+    "services": [
+        {
+            "service": "gateway",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:36",
+                    "flavour": "large",
+                    "emissions": 0.598,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 598.0,
+                    "count": 1
+                },
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "tiny",
+                    "emissions": 1.196,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1196.0,
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "service": "data_gather_olbia",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "large",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "service": "data_gather_torino",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "large",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "service": "aggregator",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "large",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "service": "mongodb_batch_olbia",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "medium",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "service": "mongodb_batch_torino",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "medium",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "service": "analyzer",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:36",
+                    "flavour": "large",
+                    "emissions": 0.598,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 598.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "service": "mongodb_history",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "flavour": "medium",
+                    "emissions": 1.794,
+                    "max_emissions": 0.598,
+                    "min_emissions": 0.598,
+                    "joules": 1794.0,
+                    "count": 3
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "source": "gateway",
+            "destination": "aggregator",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:36",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.005,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 5.0,
+                    "count": 1
+                },
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "tiny",
+                    "destination_flavour": "large",
+                    "emissions": 0.01,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 10.0,
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "source": "gateway",
+            "destination": "analyzer",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:36",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.005,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 5.0,
+                    "count": 1
+                }
+            ]
+        },
+        {
+            "source": "data_gather_olbia",
+            "destination": "mongodb_batch_olbia",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "large",
+                    "destination_flavour": "medium",
+                    "emissions": 0.015,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 15.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "source": "data_gather_torino",
+            "destination": "mongodb_batch_torino",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "large",
+                    "destination_flavour": "medium",
+                    "emissions": 0.015,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 15.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "source": "aggregator",
+            "destination": "data_gather_olbia",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.015,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 15.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "source": "aggregator",
+            "destination": "data_gather_torino",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "large",
+                    "destination_flavour": "large",
+                    "emissions": 0.015,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 15.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "source": "aggregator",
+            "destination": "mongodb_history",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:42",
+                    "source_flavour": "large",
+                    "destination_flavour": "medium",
+                    "emissions": 0.015,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 15.0,
+                    "count": 3
+                }
+            ]
+        },
+        {
+            "source": "analyzer",
+            "destination": "mongodb_history",
+            "history": [
+                {
+                    "timestamp": "2025-07-04 11:34:36",
+                    "source_flavour": "large",
+                    "destination_flavour": "medium",
+                    "emissions": 0.005,
+                    "max_emissions": 0.005,
+                    "min_emissions": 0.005,
+                    "joules": 5.0,
+                    "count": 1
+                }
+            ]
+        }
+    ],
+    "constraints": [
+        {
+            "category": "affinity",
+            "source": "data_gather_olbia",
+            "source_flavour": "large",
+            "destination": "mongodb_batch_olbia",
+            "destination_flavour": "medium",
+            "constraint_emissions": 1.75,
+            "memory_weight": 0.8455347349164652,
+            "timestamp": "2025-07-04 11:34:39"
+        },
+        {
+            "category": "affinity",
+            "source": "data_gather_torino",
+            "source_flavour": "large",
+            "destination": "mongodb_batch_torino",
+            "destination_flavour": "medium",
+            "constraint_emissions": 1.75,
+            "memory_weight": 0.8455347349164652,
+            "timestamp": "2025-07-04 11:34:39"
+        },
+        {
+            "category": "affinity",
+            "source": "aggregator",
+            "source_flavour": "large",
+            "destination": "data_gather_olbia",
+            "destination_flavour": "large",
+            "constraint_emissions": 1.7,
+            "memory_weight": 0.8455347349164652,
+            "timestamp": "2025-07-04 11:34:39"
+        },
+        {
+            "category": "affinity",
+            "source": "aggregator",
+            "source_flavour": "large",
+            "destination": "data_gather_torino",
+            "destination_flavour": "large",
+            "constraint_emissions": 1.7,
+            "memory_weight": 0.8455347349164652,
+            "timestamp": "2025-07-04 11:34:39"
+        },
+        {
+            "category": "affinity",
+            "source": "aggregator",
+            "source_flavour": "large",
+            "destination": "mongodb_history",
+            "destination_flavour": "medium",
+            "constraint_emissions": 1.75,
+            "memory_weight": 0.8455347349164652,
+            "timestamp": "2025-07-04 11:34:39"
+        },
+        {
+            "category": "affinity",
+            "source": "analyzer",
+            "source_flavour": "large",
+            "destination": "mongodb_history",
+            "destination_flavour": "medium",
+            "constraint_emissions": 1.75,
+            "memory_weight": 0.6770728658570511,
+            "timestamp": "2025-07-04 11:34:36"
+        },
+        {
+            "category": "avoid",
+            "source": "gateway",
+            "flavour": "large",
+            "node": "main",
+            "constraint_emissions": 240.396,
+            "memory_weight": 0.6770728658570511,
+            "timestamp": "2025-07-04 11:34:36"
+        },
+        {
+            "category": "avoid",
+            "source": "data_gather_olbia",
+            "flavour": "large",
+            "node": "worker2",
+            "constraint_emissions": 215.28,
+            "memory_weight": 1.0,
+            "timestamp": "2025-07-04 11:34:42"
+        },
+        {
+            "category": "avoid",
+            "source": "data_gather_torino",
+            "flavour": "large",
+            "node": "worker2",
+            "constraint_emissions": 215.28,
+            "memory_weight": 1.0,
+            "timestamp": "2025-07-04 11:34:42"
+        },
+        {
+            "category": "avoid",
+            "source": "aggregator",
+            "flavour": "large",
+            "node": "worker2",
+            "constraint_emissions": 215.28,
+            "memory_weight": 1.0,
+            "timestamp": "2025-07-04 11:34:42"
+        },
+        {
+            "category": "avoid",
+            "source": "analyzer",
+            "flavour": "large",
+            "node": "worker2",
+            "constraint_emissions": 215.28,
+            "memory_weight": 0.6770728658570511,
+            "timestamp": "2025-07-04 11:34:36"
+        },
+        {
+            "category": "avoid",
+            "source": "gateway",
+            "flavour": "tiny",
+            "node": "main",
+            "constraint_emissions": 240.396,
+            "memory_weight": 1.0,
+            "timestamp": "2025-07-04 11:34:42"
+        }
+    ],
+    "nodes": [
+        {
+            "timestamp": "2025-07-04 11:34:42",
+            "node": "main",
+            "mix": 402
+        },
+        {
+            "timestamp": "2025-07-04 11:34:42",
+            "node": "m2",
+            "mix": 200
+        },
+        {
+            "timestamp": "2025-07-04 11:34:42",
+            "node": "worker1",
+            "mix": 340
+        },
+        {
+            "timestamp": "2025-07-04 11:34:42",
+            "node": "worker2",
+            "mix": 360
+        }
+    ]
+}

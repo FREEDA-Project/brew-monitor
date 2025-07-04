@@ -1,0 +1,43 @@
+requirements:
+  components:
+    aggregator:
+      large:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: worker2
+    analyzer:
+      large:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: worker2
+    data_gather_olbia:
+      large:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: worker2
+    data_gather_torino:
+      large:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: worker2
+    gateway:
+      large:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: main
+      tiny:
+      - avoidNode:
+          energy_oriented: true
+          resilience_oriented: false
+          soft: true
+          value: main

@@ -1,0 +1,20 @@
+aggregator:
+  large: 2
+  tiny: 1
+analyzer:
+  large: 1
+data_gather_olbia:
+  large: 2
+  tiny: 1
+data_gather_torino:
+  large: 2
+  tiny: 1
+gateway:
+  large: 2
+  tiny: 1
+mongodb_batch_olbia:
+  medium: 1
+mongodb_batch_torino:
+  medium: 1
+mongodb_history:
+  medium: 1

@@ -1,0 +1,12 @@
+A avoidNode constraint was generated for the deployment of the gateway component in the large flavour on the main node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 120.79599999999999 gCO2eq and 25.115999999999985 gCO2eq.
+A avoidNode constraint was generated for the deployment of the data_gather_olbia component in the large flavour on the worker2 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 95.68 gCO2eq and 11.960000000000008 gCO2eq.
+A avoidNode constraint was generated for the deployment of the data_gather_torino component in the large flavour on the worker2 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 95.68 gCO2eq and 11.960000000000008 gCO2eq.
+A avoidNode constraint was generated for the deployment of the aggregator component in the large flavour on the worker2 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 95.68 gCO2eq and 11.960000000000008 gCO2eq.
+A avoidNode constraint was generated for the deployment of the analyzer component in the large flavour on the worker2 node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 95.68 gCO2eq and 11.960000000000008 gCO2eq.
+A avoidNode constraint was generated for the deployment of the gateway component in the tiny flavour on the main node. This decision was driven by the high resource consumption of the selected flavour combined with the poor energy mix of the target node.
+The estimated emissions savings resulting from avoiding this deployment range between 120.79599999999999 gCO2eq and 25.115999999999985 gCO2eq.

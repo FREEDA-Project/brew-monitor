@@ -1,0 +1,278 @@
+components:
+  aggregator:
+    flavours:
+      large:
+        energy: 598
+        uses:
+        - component: mongodb_history
+          min_flavour: medium
+        - component: data_gather_torino
+          min_flavour: tiny
+        - component: data_gather_olbia
+          min_flavour: tiny
+      tiny:
+        energy: 598
+        uses:
+        - component: data_gather_torino
+          min_flavour: tiny
+        - component: data_gather_olbia
+          min_flavour: tiny
+    importance_order:
+    - tiny
+    - large
+  analyzer:
+    flavours:
+      large:
+        energy: 598
+        uses:
+        - component: mongodb_history
+          min_flavour: medium
+    importance_order:
+    - large
+  data_gather_olbia:
+    flavours:
+      large:
+        energy: 598
+        uses:
+        - component: mongodb_batch_olbia
+          min_flavour: medium
+      tiny:
+        energy: 598
+        uses: []
+    importance_order:
+    - tiny
+    - large
+  data_gather_torino:
+    flavours:
+      large:
+        energy: 598
+        uses:
+        - component: mongodb_batch_torino
+          min_flavour: medium
+      tiny:
+        energy: 598
+        uses: []
+    importance_order:
+    - tiny
+    - large
+  gateway:
+    flavours:
+      large:
+        energy: 598
+        uses:
+        - component: aggregator
+          min_flavour: large
+        - component: analyzer
+          min_flavour: large
+      tiny:
+        energy: 598
+        uses:
+        - component: aggregator
+          min_flavour: tiny
+    importance_order:
+    - tiny
+    - large
+    must: true
+  mongodb_batch_olbia:
+    flavours:
+      medium:
+        energy: 598
+        uses: []
+    importance_order:
+    - medium
+  mongodb_batch_torino:
+    flavours:
+      medium:
+        energy: 598
+        uses: []
+    importance_order:
+    - medium
+  mongodb_history:
+    flavours:
+      medium:
+        energy: 598
+        uses: []
+    importance_order:
+    - medium
+name: case_study_1
+requirements:
+  budget:
+    carbon: 2000000
+    cost: 2000000
+  components:
+    aggregator:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 4
+        tiny:
+          availability: 99
+          cpu: 1
+          ram: 2
+    analyzer:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 2
+    data_gather_olbia:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 2
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 1
+    data_gather_torino:
+      common:
+        security:
+        - ssl
+        subnet:
+        - private
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 1
+          ram: 2
+        tiny:
+          availability: 97
+          cpu: 1
+          ram: 1
+    gateway:
+      common:
+        security:
+        - firewall
+        - ssl
+        subnet:
+        - public
+      flavour-specific:
+        large:
+          availability: 99
+          cpu: 2
+          ram: 4
+        tiny:
+          availability: 98
+          cpu: 1
+          ram: 2
+    mongodb_batch_olbia:
+      common:
+        security:
+        - encrypted_storage
+        subnet:
+        - private
+      flavour-specific:
+        medium:
+          availability: 99
+          cpu: 1
+          ram: 2
+          storage: 50
+    mongodb_batch_torino:
+      common:
+        security:
+        - encrypted_storage
+        subnet:
+        - private
+      flavour-specific:
+        medium:
+          availability: 99
+          cpu: 1
+          ram: 2
+          storage: 50
+    mongodb_history:
+      common:
+        security:
+        - encrypted_storage
+        subnet:
+        - private
+      flavour-specific:
+        medium:
+          availability: 99
+          cpu: 2
+          ram: 4
+          storage: 100
+  dependencies:
+    aggregator:
+      large:
+        data_gather_olbia:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+        data_gather_torino:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+        mongodb_history:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+      tiny:
+        data_gather_olbia:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+        data_gather_torino:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+    analyzer:
+      large:
+        mongodb_history:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+    data_gather_olbia:
+      large:
+        mongodb_batch_olbia:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+    data_gather_torino:
+      large:
+        mongodb_batch_torino:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+    gateway:
+      large:
+        aggregator:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+        analyzer:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25
+      tiny:
+        aggregator:
+          energy: 5
+          requirements:
+            availability: 97
+            latency: 25

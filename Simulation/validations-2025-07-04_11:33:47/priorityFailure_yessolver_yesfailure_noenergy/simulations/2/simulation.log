@@ -1,0 +1,578 @@
+11:34:27 | ECLYPSE | Simulation - Event Start-0 fired.
+11:34:27 | ECLYPSE | Simulation - Event Tick-0 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-0 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-1 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-1 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-2 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-2 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-3 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-3 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-4 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-4 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-5 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-5 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-6 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-6 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-7 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-7 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-8 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-8 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-9 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-9 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-10 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-10 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-11 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-11 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-12 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-12 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-13 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-13 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-14 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-14 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-15 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-15 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-16 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-16 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-17 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-17 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-18 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-18 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-19 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-19 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-20 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-20 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-21 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-21 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-22 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-22 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-23 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-23 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-24 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-24 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-25 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-25 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-26 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-26 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-27 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-27 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-28 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-28 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-29 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-29 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-30 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-30 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-31 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-31 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-32 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-32 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-33 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-33 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-34 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-34 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-35 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-35 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-36 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-36 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-37 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-37 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-38 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-38 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-39 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-39 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-40 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-40 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-41 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-41 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-42 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-42 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-43 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-43 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-44 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-44 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-45 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-45 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-46 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-46 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-47 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-47 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-48 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-48 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-49 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-49 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-50 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-50 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-51 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-51 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-52 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-52 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-53 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-53 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-54 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-54 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-55 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-55 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:27 | ECLYPSE | Simulation - Event Tick-56 fired.
+11:34:27 | ECLYPSE | Simulation - Event Enact-56 fired.
+11:34:27 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:27 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-57 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-57 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-58 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-58 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-59 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-59 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-60 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-60 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-61 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-61 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-62 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-62 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-63 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-63 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-64 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-64 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-65 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-65 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-66 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-66 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-67 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-67 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-68 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-68 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-69 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-69 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-70 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-70 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-71 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-71 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-72 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-72 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-73 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-73 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-74 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-74 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-75 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-75 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-76 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-76 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-77 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-77 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-78 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-78 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-79 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-79 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-80 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-80 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-81 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-81 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-82 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-82 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-83 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-83 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-84 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-84 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-85 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-85 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-86 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-86 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-87 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-87 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-88 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-88 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-89 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-89 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-90 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-90 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-91 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-91 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-92 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-92 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-93 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-93 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-94 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-94 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-95 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-95 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-96 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-96 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-97 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-97 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-98 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-98 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-99 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-99 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-100 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-100 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-101 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-101 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-102 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-102 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-103 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-103 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-104 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-104 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-105 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-105 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-106 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-106 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-107 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-107 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-108 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-108 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-109 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-109 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-110 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-110 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-111 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-111 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-112 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-112 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-113 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-113 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-114 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-114 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-115 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-115 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-116 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-116 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-117 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-117 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-118 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-118 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-119 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-119 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-120 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-120 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-121 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-121 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-122 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-122 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:28 | ECLYPSE | Simulation - Event Tick-123 fired.
+11:34:28 | ECLYPSE | Simulation - Event Enact-123 fired.
+11:34:28 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:28 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-124 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-124 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-125 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-125 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-126 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-126 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-127 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-127 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-128 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-128 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-129 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-129 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-130 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-130 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-131 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-131 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-132 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-132 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-133 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-133 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-134 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-134 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-135 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-135 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-136 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-136 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-137 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-137 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-138 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-138 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-139 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-139 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-140 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-140 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-141 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-141 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-142 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-142 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Tick-143 fired.
+11:34:29 | ECLYPSE | Simulation - Event Enact-143 fired.
+11:34:29 | ECLYPSE | PlacementManager - Placement of case_study_1 on master
+11:34:29 | ECLYPSE | PlacementManager - {gateway_tiny -> m2 | data_gather_olbia_large -> worker1 | data_gather_torino_large -> worker1 | aggregator_large -> worker1 | mongodb_batch_olbia_medium -> worker2 | mongodb_batch_torino_medium -> worker2 | mongodb_history_medium -> worker2}
+11:34:29 | ECLYPSE | Simulation - Event Stop-0 fired.
