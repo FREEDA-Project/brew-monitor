@@ -11,6 +11,17 @@ nodes:
     profile:
       cost: 9
       carbon: 402
+  m2:
+    capabilities:
+      cpu: 2
+      ram: 3
+      storage: 512
+      availability: 98
+      subnet: [public]
+      security: [ssl, firewall]
+    profile:
+      cost: 4
+      carbon: 200
   worker1:
     capabilities:
       cpu: 8
@@ -37,6 +48,10 @@ links:
   - connected_nodes: [main, worker1]
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [main, worker2]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [m2, worker1]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [m2, worker2]
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [worker1, worker2]
     capabilities: { latency: 10, availability: 99 }
