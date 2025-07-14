@@ -1,1 +1,0 @@
-avoid(gateway,large,main).

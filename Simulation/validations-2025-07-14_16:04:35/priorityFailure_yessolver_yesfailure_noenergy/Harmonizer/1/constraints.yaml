@@ -1,0 +1,16 @@
+requirements:
+  components:
+    aggregator:
+      large:
+      - avoid:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value: worker2
+    analyzer:
+      large:
+      - avoid:
+          energy_oriented: false
+          resilience_oriented: true
+          soft: true
+          value: worker2

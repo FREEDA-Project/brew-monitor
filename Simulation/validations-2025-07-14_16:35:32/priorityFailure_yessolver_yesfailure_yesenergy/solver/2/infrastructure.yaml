@@ -1,0 +1,129 @@
+links:
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - main
+  - worker1
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - main
+  - worker2
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - main
+  - worker3
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - m2
+  - worker1
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - m2
+  - worker2
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - m2
+  - worker3
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - worker1
+  - worker2
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - worker1
+  - worker3
+- capabilities:
+    availability: 99
+    latency: 10
+  connected_nodes:
+  - worker2
+  - worker3
+name: master
+nodes:
+  m2:
+    capabilities:
+      availability: 98
+      cpu: 7
+      ram: 8
+      security:
+      - ssl
+      - firewall
+      storage: 512
+      subnet:
+      - public
+    profile:
+      carbon: 200
+      cost: 4
+  main:
+    capabilities:
+      availability: 99
+      cpu: 7
+      ram: 8
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - public
+    profile:
+      carbon: 402
+      cost: 9
+  worker1:
+    capabilities:
+      availability: 99
+      cpu: 7
+      ram: 8
+      security:
+      - ssl
+      - firewall
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 340
+      cost: 7
+  worker2:
+    capabilities:
+      availability: 99
+      cpu: 7
+      ram: 8
+      security:
+      - ssl
+      - firewall
+      - encrypted_storage
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 360
+      cost: 7
+  worker3:
+    capabilities:
+      availability: 99
+      cpu: 7
+      ram: 8
+      security:
+      - ssl
+      - firewall
+      - encrypted_storage
+      storage: 1024
+      subnet:
+      - private
+    profile:
+      carbon: 360
+      cost: 7

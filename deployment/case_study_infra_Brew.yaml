@@ -2,8 +2,8 @@ name: master #name of the cluster
 nodes:
   main:
     capabilities:
-      cpu: 4
-      ram: 16
+      cpu: 7
+      ram: 8
       storage: 1024
       availability: 99
       subnet: [public]
@@ -13,8 +13,8 @@ nodes:
       carbon: 402
   m2:
     capabilities:
-      cpu: 2
-      ram: 3
+      cpu: 7
+      ram: 8
       storage: 512
       availability: 98
       subnet: [public]
@@ -24,8 +24,8 @@ nodes:
       carbon: 200
   worker1:
     capabilities:
-      cpu: 8
-      ram: 16
+      cpu: 7
+      ram: 8
       storage: 1024
       availability: 99
       subnet: [private]
@@ -35,8 +35,19 @@ nodes:
       carbon: 340
   worker2:
     capabilities:
-      cpu: 8
-      ram: 16
+      cpu: 7
+      ram: 8
+      storage: 1024
+      availability: 99
+      subnet: [private]
+      security: [ssl, firewall, encrypted_storage]
+    profile:
+      cost: 7
+      carbon: 360
+  worker3:
+    capabilities:
+      cpu: 7
+      ram: 8
       storage: 1024
       availability: 99
       subnet: [private]
@@ -49,9 +60,17 @@ links:
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [main, worker2]
     capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [main, worker3]
+    capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [m2, worker1]
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [m2, worker2]
     capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [m2, worker3]
+    capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [worker1, worker2]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [worker1, worker3]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [worker2, worker3]
     capabilities: { latency: 10, availability: 99 }

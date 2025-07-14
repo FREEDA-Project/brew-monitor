@@ -1,0 +1,16 @@
+avoid(data_gather_olbia,large,worker1).
+avoid(data_gather_olbia,large,worker2,0.896).
+avoid(analyzer,large,worker3,0.896).
+avoid(data_gather_torino,large,worker1).
+avoid(data_gather_torino,large,worker2,0.896).
+avoid(gateway,large,main,1.0).
+avoid(aggregator,large,worker3,0.896).
+avoid(aggregator,large,worker1).
+avoid(data_gather_olbia,large,worker3,0.896).
+avoid(mongodb_batch_olbia,medium,worker3,0.896).
+avoid(aggregator,large,worker2,0.896).
+avoid(mongodb_batch_torino,medium,worker3,0.896).
+avoid(gateway,large,main).
+avoid(data_gather_torino,large,worker3,0.896).
+avoid(mongodb_history,medium,worker3,0.896).
+avoid(analyzer,large,worker2,0.896).

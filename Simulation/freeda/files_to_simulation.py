@@ -229,7 +229,7 @@ def parse(
     )
     sim.register(
         app,
-        StaticStrategy(deployment_simulation) if solver else BestFitStrategy()
+        StaticStrategy(deployment_simulation) if solver else FirstFitStrategy()
     )
 
     return sim

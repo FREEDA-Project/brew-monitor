@@ -12,7 +12,7 @@ from freeda import main as freeda
 import os, sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from brew_update_policy import (brewBestFit)
+from brew_update_policy import (brewBestFit, aggregatorFailure)
 
 from update_policy import (scenarioDEMOinfrastructure, 
                            scenarioDEMOapplication, 
@@ -28,7 +28,7 @@ from kpis.generateKPIs import getKPIs, saveKPIs
 location = Path("./validations-" + datetime.today().strftime('%Y-%m-%d_%H:%M:%S'))
 os.makedirs(location, exist_ok=True)
 application_policies = [
-    [noscenario, noscenario, noscenario, noscenario]
+    [aggregatorFailure, aggregatorFailure, aggregatorFailure, aggregatorFailure]
 ]
 infrastructure_policies = [
     [brewBestFit, brewBestFit, brewBestFit, brewBestFit]
