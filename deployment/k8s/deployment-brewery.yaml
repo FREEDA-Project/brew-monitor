@@ -4,7 +4,7 @@ kind: Namespace
 metadata:
   name: brewery
 ---
-# Deployment per gateway (flavour: high)
+# Deployment per gateway (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,13 +20,12 @@ spec:
       labels:
         app: gateway
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
@@ -34,7 +33,7 @@ spec:
       
       containers:
       - name: gateway
-        image: docker.io/library/brewery-gateway:high
+        image: docker.io/library/brewery-gateway:large
         imagePullPolicy: IfNotPresent
         
         ports:
@@ -63,41 +62,40 @@ spec:
   selector:
     app: gateway
 ---
-# Deployment per data-gather-pluto (flavour: high)
+# Deployment per data-gather-olbia (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: data-gather-pluto
+  name: data-gather-olbia
   namespace: brewery 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: data-gather-pluto
+      app: data-gather-olbia
   template:
     metadata:
       labels:
-        app: data-gather-pluto
+        app: data-gather-olbia
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master-m02"
+                - "master-m04"
       
       containers:
-      - name: data-gather-pluto
-        image: docker.io/library/brewery-data-gather:high
+      - name: data-gather-olbia
+        image: docker.io/library/brewery-data-gather:large
         imagePullPolicy: IfNotPresent
         env:
         - name: INSTANCE_NAME
-          value: pluto
+          value: olbia
         ports:
         - containerPort: 5001
         resources: 
@@ -109,11 +107,11 @@ spec:
             memory: "512Mi" 
       
 ---
-# Service per data-gather-pluto
+# Service per data-gather-olbia
 apiVersion: v1
 kind: Service
 metadata:
-  name: data-gather-pluto
+  name: data-gather-olbia
   namespace: brewery 
 spec:
   type: ClusterIP
@@ -121,43 +119,42 @@ spec:
   - port: 5001
     targetPort: 5001
   selector:
-    app: data-gather-pluto
+    app: data-gather-olbia
 ---
-# Deployment per data-gather-pino (flavour: low)
+# Deployment per data-gather-torino (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: data-gather-pino
+  name: data-gather-torino
   namespace: brewery 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: data-gather-pino
+      app: data-gather-torino
   template:
     metadata:
       labels:
-        app: data-gather-pino
+        app: data-gather-torino
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master-m02"
+                - "master-m04"
       
       containers:
-      - name: data-gather-pino
-        image: docker.io/library/brewery-data-gather:low
+      - name: data-gather-torino
+        image: docker.io/library/brewery-data-gather:large
         imagePullPolicy: IfNotPresent
         env:
         - name: INSTANCE_NAME
-          value: pino
+          value: torino
         ports:
         - containerPort: 5001
         resources: 
@@ -169,11 +166,11 @@ spec:
             memory: "512Mi" 
       
 ---
-# Service per data-gather-pino
+# Service per data-gather-torino
 apiVersion: v1
 kind: Service
 metadata:
-  name: data-gather-pino
+  name: data-gather-torino
   namespace: brewery 
 spec:
   type: ClusterIP
@@ -181,9 +178,9 @@ spec:
   - port: 5001
     targetPort: 5001
   selector:
-    app: data-gather-pino
+    app: data-gather-torino
 ---
-# Deployment per aggregator (flavour: high)
+# Deployment per aggregator (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -199,25 +196,24 @@ spec:
       labels:
         app: aggregator
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master-m02"
+                - "master-m04"
       
       containers:
       - name: aggregator
-        image: docker.io/library/brewery-aggregator:high
+        image: docker.io/library/brewery-aggregator:large
         imagePullPolicy: IfNotPresent
         env:
         - name: DATA_GATHER_INSTANCES
-          value: data-gather-pluto,data-gather-pino
+          value: data-gather-olbia,data-gather-torino
         ports:
         - containerPort: 5002
         resources: 
@@ -243,7 +239,7 @@ spec:
   selector:
     app: aggregator
 ---
-# Deployment per analyzer (flavour: high)
+# Deployment per analyzer (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -259,25 +255,24 @@ spec:
       labels:
         app: analyzer
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master-m02"
+                - "master-m04"
       
       containers:
       - name: analyzer
-        image: docker.io/library/brewery-analyzer:high
+        image: docker.io/library/brewery-analyzer:large
         imagePullPolicy: IfNotPresent
         env:
         - name: DATA_GATHER_INSTANCES
-          value: data-gather-pluto,data-gather-pino
+          value: data-gather-olbia,data-gather-torino
         ports:
         - containerPort: 5003
         resources: 
@@ -303,36 +298,35 @@ spec:
   selector:
     app: analyzer
 ---
-# Deployment per mongodb-batch-pino (flavour: high)
+# Deployment per mongodb-batch-olbia (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-batch-pino
+  name: mongodb-batch-olbia
   namespace: brewery 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongodb-batch-pino
+      app: mongodb-batch-olbia
   template:
     metadata:
       labels:
-        app: mongodb-batch-pino
+        app: mongodb-batch-olbia
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master"
+                - "master-m03"
       
       containers:
-      - name: mongodb-batch-pino
+      - name: mongodb-batch-olbia
         image: docker.io/library/mongo:latest
         imagePullPolicy: IfNotPresent
         
@@ -347,11 +341,11 @@ spec:
             memory: "512Mi" 
       
 ---
-# Service per mongodb-batch-pino
+# Service per mongodb-batch-olbia
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb-batch-pino
+  name: mongodb-batch-olbia
   namespace: brewery 
 spec:
   type: ClusterIP
@@ -359,13 +353,13 @@ spec:
   - port: 27017
     targetPort: 27017
   selector:
-    app: mongodb-batch-pino
+    app: mongodb-batch-olbia
 ---
-# PVC per mongodb-batch-pino
+# PVC per mongodb-batch-olbia
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongodb-batch-pino-pvc
+  name: mongodb-batch-olbia-pvc
   namespace: brewery 
 spec:
   accessModes:
@@ -375,36 +369,35 @@ spec:
       storage: 50Mi 
 ---
 
-# Deployment per mongodb-batch-pluto (flavour: high)
+# Deployment per mongodb-batch-torino (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongodb-batch-pluto
+  name: mongodb-batch-torino
   namespace: brewery 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongodb-batch-pluto
+      app: mongodb-batch-torino
   template:
     metadata:
       labels:
-        app: mongodb-batch-pluto
+        app: mongodb-batch-torino
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master"
+                - "master-m03"
       
       containers:
-      - name: mongodb-batch-pluto
+      - name: mongodb-batch-torino
         image: docker.io/library/mongo:latest
         imagePullPolicy: IfNotPresent
         
@@ -419,11 +412,11 @@ spec:
             memory: "512Mi" 
       
 ---
-# Service per mongodb-batch-pluto
+# Service per mongodb-batch-torino
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb-batch-pluto
+  name: mongodb-batch-torino
   namespace: brewery 
 spec:
   type: ClusterIP
@@ -431,13 +424,13 @@ spec:
   - port: 27017
     targetPort: 27017
   selector:
-    app: mongodb-batch-pluto
+    app: mongodb-batch-torino
 ---
-# PVC per mongodb-batch-pluto
+# PVC per mongodb-batch-torino
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongodb-batch-pluto-pvc
+  name: mongodb-batch-torino-pvc
   namespace: brewery 
 spec:
   accessModes:
@@ -447,7 +440,7 @@ spec:
       storage: 50Mi 
 ---
 
-# Deployment per mongodb-history (flavour: high)
+# Deployment per mongodb-history (flavour: large)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -463,17 +456,16 @@ spec:
       labels:
         app: mongodb-history
     spec:
-      
+    
       affinity:
         nodeAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-          - weight: 100 
-            preference:
-              matchExpressions:
+          requiredDuringSchedulingIgnoredDuringExecution: 
+            nodeSelectorTerms:
+            - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: In
                 values:
-                - "master"
+                - "master-m03"
       
       containers:
       - name: mongodb-history

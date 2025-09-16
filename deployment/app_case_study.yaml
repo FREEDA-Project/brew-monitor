@@ -1,16 +1,16 @@
-name: case_study_1
+name: case-study-1
 components:
   gateway:
     must: true
     flavours:
       high:
         uses:
-          - { component: aggregator, min_flavour: high }
-          - { component: analyzer, min_flavour: high }
+          - { component: aggregator, min-flavour: high }
+          - { component: analyzer, min-flavour: high }
         energy: 0 
       low:
         uses:
-          - { component: aggregator, min_flavour: low }
+          - { component: aggregator, min-flavour: low }
         energy: 0
     importance_order: [low, high] 
 
@@ -18,12 +18,14 @@ components:
     flavours:
       high:
         uses:
-          - { component: mongodb_history, min_flavour: standard }
-          - { component: data-gather, min_flavour: low }
+          - { component: mongodb-history, min-flavour: standard }
+          - { component: data-gather-torino, min-flavour: low }
+          - { component: data-gather-olbia, min-flavour: low }
         energy: 0 
       low:
         uses:
-          - { component: data-gather, min_flavour: low }
+          - { component: data-gather-torino, min-flavour: low }
+          - { component: data-gather-olbia, min-flavour: low }
         energy: 0 
     importance_order: [low, high] 
 
@@ -31,7 +33,7 @@ components:
     flavours:
       high:
         uses:
-          - { component: mongodb-history, min_flavour: standard } 
+          - { component: mongodb-history, min-flavour: standard } 
         energy: 0 
     importance_order: [high]
 
@@ -39,7 +41,7 @@ components:
     flavours:
       high:
         uses:
-          - { component: mongodb-batch-torino, min_flavour: standard } 
+          - { component: mongodb-batch-torino, min-flavour: standard } 
         energy: 0
       low:
         uses: [] 
@@ -50,28 +52,21 @@ components:
     flavours:
       high:
         uses:
-          - { component: mongodb-batch-olbia, min_flavour: standard } 
+          - { component: mongodb-batch-olbia, min-flavour: standard } 
         energy: 0
       low:
         uses: [] 
         energy: 0 
     importance_order: [low, high]
 
-  mongodb_history: 
+  mongodb-history: 
     flavours:
       standard:
         uses: []
         energy: 0 
     importance_order: [standard]
 
-  mongodb-batch-torino: 
-    flavours:
-      standard:
-        uses: []
-        energy: 0 
-    importance_order: [standard]
-
-  mongod-batch-olbia: 
+  mongodb-batch-olbia: 
     flavours:
       standard:
         uses: []
@@ -84,41 +79,54 @@ requirements:
       common:
         subnet: 
         security: 
-      flavour-specific:
-        high: { cpu: 2, ram: 4, availability: 99 }
+      flavour_specific:
+        high: { cpu: 2, ram: 2, availability: 99 }
         low: { cpu: 1, ram: 2, availability: 98 } 
     aggregator:
       common:
         subnet: 
         security:
-      flavour-specific:
-        high: { cpu: 2, ram: 4, availability: 99 } 
+      flavour_specific:
+        high: { cpu: 2, ram: 2, availability: 99 } 
         low: { cpu: 1, ram: 2, availability: 98 } 
     analyzer:
       common:
         subnet:
         security:
-      flavour-specific:
+      flavour_specific:
         high: { cpu: 2, ram: 2, availability: 99 } 
-    data-gather:
+    data-gather-olbia:
       common:
         subnet: 
         security: 
-      flavour-specific:
+      flavour_specific:
         high: { cpu: 1, ram: 2, availability: 99 } 
         low: { cpu: 1, ram: 1, availability: 97 } 
-    mongodb_history:
+    data-gather-torino:
+      common:
+        subnet: 
+        security: 
+      flavour_specific:
+        high: { cpu: 1, ram: 2, availability: 99 } 
+        low: { cpu: 1, ram: 1, availability: 97 } 
+    mongodb-history:
       common:
         subnet:
         security: 
-      flavour-specific:
-        standard: { cpu: 2, ram: 4, availability: 99, storage: 100 } 
-    mongodb_batch:
+      flavour_specific:
+        standard: { cpu: 1, ram: 2, availability: 99, storage: 100 } 
+    mongodb-batch-olbia:
       common:
         subnet: 
         security: 
-      flavour-specific:
-        standard: { cpu: 1, ram: 2, availability: 99, storage: 50 } 
+      flavour_specific:
+        standard: { cpu: 1, ram: 2, availability: 99, storage: 50 }
+    mongodb-batch-torino:
+      common:
+        subnet: 
+        security: 
+      flavour_specific:
+        standard: { cpu: 1, ram: 2, availability: 99, storage: 50 }
 
   dependencies:
     gateway:
@@ -133,22 +141,29 @@ requirements:
         aggregator:
           requirements: {}
           energy: 0 
+
     aggregator:
       high: 
-        mongodb_history: 
+        mongodb-history: 
           requirements: {}
           energy: 
-        data-gather:     
+        data-gather-torino:     
           requirements: {}
           energy: 0 
+        data-gather-olbia:     
+          requirements: {}
+          energy: 0
       low: 
-        data-gather:     
+        data-gather-torino:     
           requirements: {}
           energy: 0 
+        data-gather-olbia:     
+          requirements: {}
+          energy: 0
         
     analyzer: 
       high: 
-        mongodb_history: 
+        mongodb-history: 
           requirements: {}
           energy: 0 
 
@@ -157,17 +172,15 @@ requirements:
         mongodb-batch-torino:   
           requirements: {}
           energy: 0 
-      low: 
-        pass
+      low:
+        
     data-gather-olbia:
       high: 
         mongodb-batch-olbia:   
           requirements: {}
           energy: 0 
       low: 
-        pass
-
-
+        
 budget:
   cost: 2000000
   carbon: 2000000

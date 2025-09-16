@@ -2,27 +2,28 @@ cluster: master
 driver: docker
 namespace: brewery
 containers:
-    gateway:
-      cpu: "1"
-      memory: "512Mi"
-    aggregator:
-      cpu: "2"
-      memory: "7Gi"
-    analyzer:
-      cpu: "1"
-      memory: "512Mi"
-    data-gather-pluto:
-      cpu: "1"
-      memory: "512Mi"
-    data-gather-pino:
-      cpu: "1"
-      memory: "512Mi"
-    mongodb-batch-pluto:
-      cpu: "1"
-      memory: "1Gi"
-    mongodb-batch-pino:
-      cpu: "1"
-      memory: "1Gi"
-    mongodb-history:
-        cpu: "1"
-        memory: "1Gi"
+#TUTTO HIGH
+  - name: gateway
+    cpu: "3"
+    memory: "4Gi"
+  - name: aggregator
+    cpu: "2"
+    memory: "2Gi"
+  - name: analyzer
+    cpu: "1800m"
+    memory: "1500Mi"
+  - name: data-gather-olbia
+    cpu: "2"
+    memory: "2Gi"
+  - name: data-gather-torino
+    cpu: "2"
+    memory: "2Gi"
+  - name: mongodb-batch-olbia
+    cpu: "1"
+    memory: "2Gi"
+  - name: mongodb-batch-torino
+    cpu: "1"
+    memory: "2Gi"
+  - name: mongodb-history
+    cpu: "1"
+    memory: "2Gi"

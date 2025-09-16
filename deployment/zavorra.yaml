@@ -1,0 +1,86 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-zavorra-gatewaynodeefficient
+  namespace: default
+  labels:
+    type: zavorra
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - master
+  containers:
+  - name: hog
+    image: busybox
+    command:
+    - sh
+    - -c
+    - sleep 3600
+    resources:
+      requests:
+        cpu: 4350m
+        memory: 2646Mi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-zavorra-gatewaynodestrong
+  namespace: default
+  labels:
+    type: zavorra
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - master-m02
+  containers:
+  - name: hog
+    image: busybox
+    command:
+    - sh
+    - -c
+    - sleep 3600
+    resources:
+      requests:
+        cpu: 3100m
+        memory: 0Mi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-zavorra-appnodeefficient
+  namespace: default
+  labels:
+    type: zavorra
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: kubernetes.io/hostname
+            operator: In
+            values:
+            - master-m05
+  containers:
+  - name: hog
+    image: busybox
+    command:
+    - sh
+    - -c
+    - sleep 3600
+    resources:
+      requests:
+        cpu: 1100m
+        memory: 768Mi

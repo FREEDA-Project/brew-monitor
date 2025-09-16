@@ -8,7 +8,7 @@ import json
 import yaml
 from typing import Dict, List
 
-# Configurazione logging
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
@@ -28,7 +28,7 @@ class MinikubeCluster:
 
     def run_command(self, command: List[str], check: bool = True) -> subprocess.CompletedProcess:
         try:
-            logger.info(f"Esecuzione comando: {' '.join(command)}")
+            logger.info(f"Running command: {' '.join(command)}")
             result = subprocess.run(
                 command,
                 check=check,
@@ -36,78 +36,105 @@ class MinikubeCluster:
                 text=True
             )
             if result.stdout:
-                logger.info(f"Output del comando: {result.stdout}")
+                logger.info(f"Command output: {result.stdout}")
             return result
         except subprocess.CalledProcessError as e:
-            logger.error(f"Errore nell'esecuzione del comando {' '.join(command)}")
+            logger.error(f"Error running command {' '.join(command)}")
             logger.error(f"Output: {e.output}")
             logger.error(f"Stderr: {e.stderr}")
             raise
 
     def check_prerequisites(self):
-        logger.info("Verifico i prerequisiti...")
-        # Verifica minikube
+        logger.info("Checking prerequisites...")
+        # Check Minikube
         try:
             self.run_command(["minikube", "version"])
         except subprocess.CalledProcessError:
-            logger.error("Minikube non installato. Installa minikube prima di procedere.")
+            logger.error("Minikube is not installed. Install Minikube before proceeding.")
             raise
 
-        # Verifica driver
+        # Check driver
         if self.driver == "docker":
             try:
                 self.run_command(["docker", "version"])
             except subprocess.CalledProcessError:
-                logger.error("Docker non installato. Installa Docker prima di procedere.")
+                logger.error("Docker is not installed. Install Docker before proceeding.")
                 raise
 
     def create_cluster(self):
-        logger.info(f"Creo il cluster {self.cluster_name}...")
+        logger.info(f"Creating cluster {self.cluster_name}...")
         
-        # Get the first node's configuration for the control plane
+        # Take first node config for control plane resources
         first_node = next(iter(self.cluster_config['nodes'].values()))
-        memory = str(first_node['capabilities']['ram'] * 1024)  # Convert GB to MB
+        memory = str(first_node['capabilities']['ram'] * 1024)
         cpus = str(first_node['capabilities']['cpu'])
         
-        # Prima elimina il cluster se esiste
+        # Delete cluster if it exists for a clean creation
         try:
-            logger.info(f"Elimino il cluster {self.cluster_name} se esiste...")
+            logger.info(f"Deleting cluster {self.cluster_name} if it exists...")
             self.run_command(["minikube", "delete", "-p", self.cluster_name], check=False)
         except Exception as e:
-            logger.warning(f"Errore durante la pulizia del cluster esistente: {str(e)}")
+            logger.warning(f"Error cleaning existing cluster: {str(e)}")
         
-        # Costruisci il comando base
+        # Command to create cluster with all nodes
         command = [
             "minikube", "start",
             "-p", self.cluster_name,
             "--cpus", cpus,
-            "--memory", memory,
+            "--memory", f"{memory}mb",
             "--nodes", str(self.num_nodes),
             "--driver", self.driver
         ]
         
-        logger.info(f"Comando per creare il cluster: {' '.join(command)}")
+        logger.info(f"Executing command to create cluster: {' '.join(command)}")
+        self.run_command(command)
         
-        # Esegui il comando
-        try:
-            self.run_command(command)
-            self.nodes.append(self.cluster_name)
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Errore durante la creazione del cluster: {str(e)}")
-            logger.error(f"Output completo: {e.output}")
-            raise
-        
-        # Ottieni la lista dei nodi
-        nodes = self.get_node_names()
-        
-        # Configura i nodi worker
-        for i, node_name in enumerate(nodes[1:], 1):
-            logger.info(f"Configurando il worker node {node_name}...")
-            # Aggiungi l'etichetta worker
-            self.label_worker_nodes(node_name)
-            # Aggiungi il nome del nodo alla lista
-            worker_name = list(self.cluster_config['nodes'].keys())[i]
-            self.nodes.append(worker_name)
+        # Wait for cluster to stabilize
+        logger.info("Waiting 60 seconds for cluster to stabilize before applying labels...")
+        time.sleep(60)
+
+        # --- BEGIN MODIFIED AND ADDED LOGIC ---
+        logger.info("Applying labels to cluster nodes...")
+
+        # Map logical YAML node names to actual Minikube node names
+        defined_nodes_config = self.cluster_config.get('nodes', {})
+        logical_node_names = list(defined_nodes_config.keys())
+
+        for index, logical_name in enumerate(logical_node_names):
+            # Determine actual node name created by Minikube
+            if index == 0:
+                actual_node_name = self.cluster_name # First node has same name as cluster profile
+            else:
+                # Subsequent nodes: <cluster>-m02, <cluster>-m03, etc.
+                actual_node_name = f"{self.cluster_name}-m{index + 1:02d}"
+            
+            logger.info(f"Configuring node: {actual_node_name} (corresponding to '{logical_name}')")
+            self.nodes.append(actual_node_name)
+
+            # Add 'worker' label if not main node
+            if index > 0:
+                self.label_worker_nodes(actual_node_name)
+
+            # Retrieve and apply custom labels from profile
+            node_config = defined_nodes_config[logical_name]
+            profile = node_config.get('profile', {})
+            
+            cost = profile.get('cost')
+            carbon = profile.get('carbon')
+            
+            if cost is not None:
+                logger.info(f"  -> Applying label cost={cost}")
+                self.run_command([
+                    "kubectl", "label", "node", actual_node_name,
+                    f"cost={cost}", "--overwrite"
+                ], check=False)
+            
+            if carbon is not None:
+                logger.info(f"  -> Applying label carbon={carbon}")
+                self.run_command([
+                    "kubectl", "label", "node", actual_node_name,
+                    f"carbon={carbon}", "--overwrite"
+                ], check=False)
 
     def get_node_names(self) -> List[str]:
         command = ["kubectl", "get", "nodes", "-o", "json"]
@@ -115,42 +142,42 @@ class MinikubeCluster:
         nodes = json.loads(result.stdout)
         
         if len(nodes["items"]) == 0:
-            raise Exception("Nessun nodo trovato")
+            raise Exception("No nodes found")
         
         return [node["metadata"]["name"] for node in nodes["items"]]
 
     def label_worker_nodes(self, node_name: str):
-        logger.info(f"Assegno il ruolo 'worker' al nodo {node_name}...")
+        logger.info(f"Assigning 'worker' role to node {node_name}...")
         
         command = [
             "kubectl", "label", "nodes", node_name, "node-role.kubernetes.io/worker=worker", "--overwrite"
         ]
     
         self.run_command(command)
-        logger.info(f"Ruolo 'worker' assegnato a {node_name}")
+        logger.info(f"'worker' role assigned to {node_name}")
 
     def verify_cluster(self):
-        logger.info("Verifico lo stato del cluster...")
+        logger.info("Verifying cluster status...")
         
-        # Verifica nodi
+        # Check nodes
         command = ["kubectl", "get", "nodes", "-o", "json"]
         result = self.run_command(command)
         nodes = json.loads(result.stdout)
         
         if len(nodes["items"]) != self.num_nodes:
-            raise Exception(f"Numero di nodi non corretto. Attesi: {self.num_nodes}, Trovati: {len(nodes['items'])}")
+            raise Exception(f"Incorrect number of nodes. Expected: {self.num_nodes}, Found: {len(nodes['items'])}")
         
-        # Verifica stato dei nodi
+        # Check node status
         for node in nodes["items"]:
             node_name = node["metadata"]["name"]
             conditions = {c["type"]: c["status"] for c in node["status"]["conditions"]}
             
             if conditions.get("Ready") != "True":
-                raise Exception(f"Nodo {node_name} non pronto")
+                raise Exception(f"Node {node_name} is not ready")
             
             # Get node resources
             capacity = node["status"]["capacity"]
-            logger.info(f"Nodo {node_name} pronto - CPU: {capacity['cpu']}, Memoria: {capacity['memory']}")
+            logger.info(f"Node {node_name} ready - CPU: {capacity['cpu']}, Memory: {capacity['memory']}")
 
     def setup(self):
         try:
@@ -158,29 +185,29 @@ class MinikubeCluster:
             self.create_cluster()
             self.verify_cluster()
             
-            logger.info(f"\nCluster {self.cluster_name} configurato con successo!")
-            logger.info(f"Nodi creati: {', '.join(self.nodes)}")
+            logger.info(f"\nCluster {self.cluster_name} configured successfully!")
+            logger.info(f"Nodes created: {', '.join(self.nodes)}")
             
-            # Mostra informazioni utili
-            logger.info("Informazioni sul cluster:")
+            # Display useful info
+            logger.info("Cluster info:")
             result = self.run_command(["kubectl", "cluster-info"])
             logger.info(result.stdout)
 
-            logger.info("Nodi del cluster:")
+            logger.info("Cluster nodes:")
             result = self.run_command(["kubectl", "get", "nodes", "--show-labels"])
             logger.info(result.stdout)
             
         except Exception as e:
-            logger.error(f"Errore durante la configurazione del cluster: {str(e)}")
+            logger.error(f"Error during cluster setup: {str(e)}")
             self.cleanup()
             raise
 
     def cleanup(self): 
-        logger.info("Pulizia del cluster...")
+        logger.info("Cleaning up cluster...")
         try:
             self.run_command(["minikube", "delete", "-p", self.cluster_name], check=False)
         except Exception as e:
-            logger.error(f"Errore durante la pulizia: {str(e)}")
+            logger.error(f"Error during cleanup: {str(e)}")
 
 class ClusterManager:
     def __init__(self, config_file: str):
@@ -192,17 +219,16 @@ class ClusterManager:
             with open(config_file, 'r') as f:
                 return yaml.safe_load(f)
         except Exception as e:
-            logger.error(f"Errore nel caricamento del file di configurazione: {str(e)}")
+            logger.error(f"Error loading configuration file: {str(e)}")
             raise
 
     def setup_clusters(self):
         cluster_name=self.config['name']
         
-        logger.info(f"\nConfigurazione del cluster {cluster_name}...")
+        logger.info(f"\nSetting up cluster {cluster_name}...")
         cluster = MinikubeCluster(
             cluster_name=cluster_name,
             cluster_config=self.config
-            
         )
     
         cluster.setup()
@@ -210,13 +236,13 @@ class ClusterManager:
 
     def cleanup_clusters(self):
         for cluster_name, cluster in self.clusters.items():
-            logger.info(f"\nPulizia del cluster {cluster_name}...")
+            logger.info(f"\nCleaning up cluster {cluster_name}...")
             cluster.cleanup()
 
 def main():
-    parser = argparse.ArgumentParser(description='Configura cluster Kubernetes multi-nodo con Minikube')
-    parser.add_argument('--config', type=str, required=True, help='Percorso del file di configurazione YAML')
-    parser.add_argument('--delete', action='store_true', help='Elimina i cluster esistenti')
+    parser = argparse.ArgumentParser(description='Set up multi-node Kubernetes cluster with Minikube')
+    parser.add_argument('--config', type=str, required=True, help='Path to YAML configuration file')
+    parser.add_argument('--delete', action='store_true', help='Delete existing clusters')
     
     args = parser.parse_args()
     
@@ -228,4 +254,4 @@ def main():
         manager.setup_clusters()
 
 if __name__ == "__main__":
-    main() 
+    main()

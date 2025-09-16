@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-# Indirizzi dei servizi sottostanti
+# URLs of the underlying services
 ANALYZER_URL = "http://analyzer:5003/analyzer/stats"
 AGGREGATOR_URL = "http://aggregator:5002/aggregator/current"
 
@@ -13,7 +13,7 @@ def get_analyzer_stats():
         response = requests.get(ANALYZER_URL)
         return jsonify(response.json()), response.status_code
     except Exception as e:
-        return jsonify({"error": f"Analyzer non disponibile: {str(e)}"}), 500
+        return jsonify({"error": f"Analyzer not available: {str(e)}"}), 500
 
 @app.route("/api/aggregator/current", methods=["GET"])
 def get_aggregator_data():
@@ -21,7 +21,7 @@ def get_aggregator_data():
         response = requests.get(AGGREGATOR_URL)
         return jsonify(response.json()), response.status_code
     except Exception as e:
-        return jsonify({"error": f"Aggregator non disponibile: {str(e)}"}), 500
+        return jsonify({"error": f"Aggregator not available: {str(e)}"}), 500
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

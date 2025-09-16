@@ -1,30 +1,120 @@
-name: master #name of the cluster
+name: master
 nodes:
-  main_node:
+  gatewaynodeefficient:
     capabilities:
       cpu: 2
       ram: 4
-      storage: 1024
-      availability: 99.9 
-    profile: 
-      cost: 5       
-      carbon: 150   
-  worker1:
+      storage: 100
+      availability: 99
+      subnet: [public]
+      security: [firewall, ssl]
+    profile:
+      cost: 100       
+      carbon: 200   
+  gatewaynodestrong:
     capabilities:
-      cpu: 2
-      ram: 4
-      storage: 1024
-      availability: 99.9 
-    profile: 
-      cost: 5       
-      carbon: 150
-  worker2:
+      cpu: 4
+      ram: 8
+      storage: 200
+      availability: 99
+      subnet: [public]
+      security: [firewall, ssl]
+    profile:
+      cost: 70     
+      carbon: 250   
+  databasenode:
     capabilities:
-      cpu: 2
-      ram: 4
+      cpu: 8
+      ram: 8
       storage: 1024
-      availability: 99.9 
-    profile: 
-      cost: 5       
-      carbon: 150  
-    
+      availability: 99
+      subnet: [private]
+      security: [encrypted_storage]
+    profile:
+      cost: 60      
+      carbon: 100  
+  appnodestrong:
+    capabilities:
+      cpu: 8
+      ram: 8
+      storage: 512
+      availability: 99
+      subnet: [private]
+      security: [ssl,encrypted_storage]
+    profile:
+      cost: 100      
+      carbon: 100   
+  appnodeefficient:
+    capabilities:
+      cpu: 6
+      ram: 6
+      storage: 256
+      availability: 98
+      subnet: [private]
+      security: [ssl]
+    profile:
+      cost: 105     
+      carbon: 90
+  veryexpensive1:
+    capabilities:
+      cpu: 8
+      ram: 8
+      storage: 256
+      availability: 98
+      subnet: [private]
+      security: [ssl,encrypted_storage]
+    profile:
+      cost: 50     
+      carbon: 1000 
+  veryexpensive2:
+    capabilities:
+      cpu: 8
+      ram: 8
+      storage: 256
+      availability: 98
+      subnet: [public]
+      security: [firewall,ssl]
+    profile:
+      cost: 50   
+      carbon: 1000
+links:
+ 
+  - connected_nodes: [gatewaynodeefficient, appnodeefficient]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [gatewaynodeefficient, appnodestrong]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodeefficient, databasenode]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodeefficient, gatewaynodestrong]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodeefficient, veryexpensive1]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodeefficient, veryexpensive2]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [veryexpensive1, veryexpensive2]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodestrong, appnodeefficient]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [gatewaynodestrong, appnodestrong]
+    capabilities: { latency: 10, availability: 99}
+  - connected_nodes: [gatewaynodestrong, databasenode]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodestrong, veryexpensive1]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [gatewaynodestrong, veryexpensive2]
+    capabilities: { latency: 10, availability: 98 }
+  
+  - connected_nodes: [appnodestrong, veryexpensive1]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [appnodestrong, veryexpensive2]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [appnodestrong, appnodeefficient]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [appnodestrong, databasenode]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [appnodeefficient, databasenode]
+    capabilities: { latency: 10, availability: 99 }
+  - connected_nodes: [appnodeefficient, veryexpensive1]
+    capabilities: { latency: 10, availability: 98 }
+  - connected_nodes: [appnodeefficient, veryexpensive2]
+    capabilities: { latency: 10, availability: 98 }

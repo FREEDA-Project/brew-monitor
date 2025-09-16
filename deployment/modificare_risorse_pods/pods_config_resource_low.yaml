@@ -1,0 +1,17 @@
+cluster: master
+driver: docker
+namespace: brewery
+containers:
+#TUTTO low
+  - name: gateway
+    cpu: "2"
+    memory: "3Gi"
+  - name: aggregator
+    cpu: "2"
+    memory: "1Gi"
+  - name: data-gather-olbia
+    cpu: "1"
+    memory: "1Gi"
+  - name: data-gather-torino
+    cpu: "1"
+    memory: "1Gi"

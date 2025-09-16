@@ -6,7 +6,7 @@ from datetime import datetime
 import random
 import sys
 
-# Configurazione del logging
+# Logging configuration
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -46,8 +46,8 @@ class BreweryLoadTester:
         successful_requests = 0
         total_requests = 0
 
-        logging.info(f"Inizio test di carico per {duration_minutes} minuti")
-        logging.info(f"Endpoint testati: {', '.join(self.endpoints)}")
+        logging.info(f"Starting load test for {duration_minutes} minutes")
+        logging.info(f"Tested endpoints: {', '.join(self.endpoints)}")
 
         while time.time() < end_time:
             for endpoint in self.endpoints:
@@ -57,17 +57,17 @@ class BreweryLoadTester:
                 time.sleep(self.request_interval)
 
         success_rate = (successful_requests / total_requests) * 100 if total_requests > 0 else 0
-        logging.info(f"\nTest di carico completato:")
-        logging.info(f"Richieste totali: {total_requests}")
-        logging.info(f"Richieste riuscite: {successful_requests}")
-        logging.info(f"Tasso di successo: {success_rate:.2f}%")
+        logging.info(f"\nLoad test completed:")
+        logging.info(f"Total requests: {total_requests}")
+        logging.info(f"Successful requests: {successful_requests}")
+        logging.info(f"Success rate: {success_rate:.2f}%")
 
 def main():
-    parser = argparse.ArgumentParser(description='Script di load testing per l''applicazione Brewery')
-    parser.add_argument('--url', required=True, help='URL base del servizio gateway (es: http://192.168.49.2:30000)')
-    parser.add_argument('--high', action='store_true', help='Testa gli endpoint del gateway high')
-    parser.add_argument('--interval', type=float, default=1.0, help='Intervallo tra le richieste in secondi')
-    parser.add_argument('--duration', type=int, default=5, help='Durata del test in minuti')
+    parser = argparse.ArgumentParser(description='Load testing script for the Brewery application')
+    parser.add_argument('--url', required=True, help='Base URL of the gateway service (e.g., http://192.168.49.2:30000)')
+    parser.add_argument('--high', action='store_true', help='Test the high gateway endpoints')
+    parser.add_argument('--interval', type=float, default=1.0, help='Interval between requests in seconds')
+    parser.add_argument('--duration', type=int, default=5, help='Test duration in minutes')
     
     args = parser.parse_args()
     
@@ -80,4 +80,4 @@ def main():
     tester.run_load_test(args.duration)
 
 if __name__ == "__main__":
-    main() 
+    main()
