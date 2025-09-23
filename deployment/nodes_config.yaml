@@ -66,17 +66,7 @@ nodes:
     profile:
       cost: 50     
       carbon: 1000 
-  veryexpensive2:
-    capabilities:
-      cpu: 8
-      ram: 8
-      storage: 256
-      availability: 98
-      subnet: [public]
-      security: [firewall,ssl]
-    profile:
-      cost: 50   
-      carbon: 1000
+  
 links:
  
   - connected_nodes: [gatewaynodeefficient, appnodeefficient]
@@ -89,10 +79,6 @@ links:
     capabilities: { latency: 10, availability: 98 }
   - connected_nodes: [gatewaynodeefficient, veryexpensive1]
     capabilities: { latency: 10, availability: 98 }
-  - connected_nodes: [gatewaynodeefficient, veryexpensive2]
-    capabilities: { latency: 10, availability: 98 }
-  - connected_nodes: [veryexpensive1, veryexpensive2]
-    capabilities: { latency: 10, availability: 98 }
   - connected_nodes: [gatewaynodestrong, appnodeefficient]
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [gatewaynodestrong, appnodestrong]
@@ -101,12 +87,7 @@ links:
     capabilities: { latency: 10, availability: 98 }
   - connected_nodes: [gatewaynodestrong, veryexpensive1]
     capabilities: { latency: 10, availability: 98 }
-  - connected_nodes: [gatewaynodestrong, veryexpensive2]
-    capabilities: { latency: 10, availability: 98 }
-  
   - connected_nodes: [appnodestrong, veryexpensive1]
-    capabilities: { latency: 10, availability: 98 }
-  - connected_nodes: [appnodestrong, veryexpensive2]
     capabilities: { latency: 10, availability: 98 }
   - connected_nodes: [appnodestrong, appnodeefficient]
     capabilities: { latency: 10, availability: 99 }
@@ -116,5 +97,4 @@ links:
     capabilities: { latency: 10, availability: 99 }
   - connected_nodes: [appnodeefficient, veryexpensive1]
     capabilities: { latency: 10, availability: 98 }
-  - connected_nodes: [appnodeefficient, veryexpensive2]
-    capabilities: { latency: 10, availability: 98 }
+  
